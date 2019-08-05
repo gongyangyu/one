@@ -1,7 +1,8 @@
 import React from 'react';
 import './index.less';
-import { Row,Col,Icon} from 'antd';
+import {Col, Icon, Row} from 'antd';
 import Util from '../../utils/utils'
+
 export default class Header extends React.Component {
     componentWillMount(){
         this.setState({
@@ -25,7 +26,7 @@ export default class Header extends React.Component {
                 <Row className='header-top'>
                     <Col span={24}>
                         <span><Icon type='user'></Icon><span>{this.state.userInfo.userName}</span><span>{this.state.userInfo.deptName}</span></span>
-                        <a href="#">退出</a>
+                        <a href="#/login">退出</a>
                     </Col>
                 </Row>
                 <Row className='breadcrumb'>

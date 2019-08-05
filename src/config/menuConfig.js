@@ -1,32 +1,32 @@
 const menuList=[
     {
         title:'首页',
-        key:'admin/home',
+        key:'/admin/home',
         icon:'home'
     },{
         title:'按钮',
-        key:'admin/ui/button',
+        key:'/admin/ui/button',
         icon:'appstore',
         children:[{
             title:'普通按钮',
-            key:'admin/ui/u-button',
+            key:'/admin/ui/buttons',
             icon:'appstore',
         },{
             title:'按钮组',
-            key:'admin/ui/group-button',
+            key:'/admin/ui/group-button',
             icon:'appstore',
         },{
             title:'数据表格',
-            key:'admin/ui/data-table',
+            key:'/admin/ui/data-table',
             icon:'appstore',
         },{
             title:'表格',
-            key:'admin/ui/table',
+            key:'/admin/ui/table',
             icon:'appstore',
         }]
     },{
         title:'组织管理',
-        key:'admin/org',
+        key:'/admin/org',
         icon:'apartment'
     },{
         title:'用户管理',
@@ -34,7 +34,7 @@ const menuList=[
         icon:'user'
     },{
         title:'权限设置',
-        key:'admin/permission',
+        key:'/admin/permission',
         icon:'setting'
     }
 ]
