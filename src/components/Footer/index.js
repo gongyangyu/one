@@ -1,10 +1,12 @@
 import React from 'react';
 import './index.less';
-import { Row } from 'antd';
+
 export default class Footer extends React.Component {
     render() {
-        return (<Row>
-            Footer
-        </Row>)
+        return (
+            <div className='footer'>
+                版权所有： xxxxxxxxxxx鹤龙六路 技术支持：浩瀚星海
+            </div>
+        )
     }
 }
