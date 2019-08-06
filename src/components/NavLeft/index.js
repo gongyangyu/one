@@ -17,7 +17,7 @@ export default class NavLeft extends React.Component {
             if(item.children){
                 return (<SubMenu key={item.key} title={<span><Icon type={item.icon}></Icon><span>{item.title}</span></span>}>{this.renderMenu(item.children)}</SubMenu>);
             }
-            return <Menu.Item key={item.key}>{<span><Icon type={item.icon}></Icon><span><NavLink to={item.key}>{item.title}</NavLink></span></span>}</Menu.Item>
+            return <Menu.Item key={item.key}>{<NavLink to={item.key}><span><Icon type={item.icon}></Icon><span>{item.title}</span></span></NavLink>}</Menu.Item>
         });
     }
     render() {

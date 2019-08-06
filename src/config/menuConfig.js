@@ -1,7 +1,7 @@
 const menuList=[
     {
-        title:'首页',
-        key:'/admin/home',
+        title:'任务中心',
+        key:'/admin/dashboard',
         icon:'home'
     },{
         title:'按钮',
