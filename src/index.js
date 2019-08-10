@@ -3,8 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import GRouter from './router';
 import * as serviceWorker from './serviceWorker';
+import {Provider} from 'react-redux';
+import configStore from './redux/store/configStore'
 
-ReactDOM.render( <GRouter/>, document.getElementById('root')
+const store=configStore();
+
+ReactDOM.render(<Provider store={store}> <GRouter/></Provider>, document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
